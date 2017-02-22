@@ -1,0 +1,45 @@
+
+[
+	{
+		"session_number": 1,
+		"date": "2017-03-01",
+		"subject":"SQL",
+		"trainer": {
+			"name":"Rawand",
+			"email":"rawand@sql.org"
+		},
+		"trainees": [
+			{
+				"name":"Fred",
+				"role":"DBA"
+			},
+			{
+				"name":"Farhan",
+				"role":"Manager"
+			},
+			{
+				"name":"Yara",
+				"role":"Developer"
+			}
+		]
+	},
+	{
+		"session_number": 2,
+		"date": "2017-03-02",
+		"subject":"Python",
+		"trainer": {
+			"name":"Sven",
+			"email":"sven@python.org"
+		},
+		"trainees": [
+			{
+				"name":"Fred",
+				"role":"DBA"
+			},
+			{
+				"name":"Yara",
+				"role":"Developer"
+			}
+		]
+	}
+]
