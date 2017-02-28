@@ -1,0 +1,52 @@
+Setting up the environment
+
+Move the following ISOs to your disk:
+
+dynamodb.iso
+meerkatdemo_abacus.iso
+meerkatdemo_api.iso
+meerkatdemo_auth.iso
+meerkatdemo_frontend.iso
+meerkatdemo_hermes.iso
+meerkatdemo_nginx.iso
+postgis.iso
+rabbitmq.iso
+
+Run the following commands: 
+docker load --input dynamodb.iso
+docker load --input meerkatdemo_abacus.iso
+docker load --input meerkatdemo_api.iso
+docker load --input meerkatdemo_auth.iso
+docker load --input meerkatdemo_frontend.iso
+docker load --input meerkatdemo_hermes.iso
+docker load --input meerkatdemo_nginx.iso
+docker load --input postgis.iso
+docker load --input rabbitmq.iso
+
+Go to folder meerkat_demo
+
+Run the following command:
+docker-compose up -d
+
+Go to VirtualBox
+Select the currently running virtual machine (default) and go to Settings
+In Settings screen, go to Network
+In Adapter 1 tab, expand the Advanced view
+Go to Port Forwarding
+
+Add new port forwarding rules:
+Name	Protocol	Host IP		Host Port	Guest IP	Guest Port
+Rule 1	TCP			127.0.0.1	80						80
+Rule 2	TCP			127.0.0.1	8888					8888
+
+Preparing for database exercises:
+
+Move the following ISO to your disk:
+sql-ex.iso
+
+Run the following command:
+docker load --input sql-ex.iso
+
+Run the following command:
+docker run -it --rm -p 8888:8888 --network host sql-ex
+
