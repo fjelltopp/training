@@ -140,6 +140,20 @@ chmod 755
 chown user:group
 ```
 
+### Exercise
+Lorem ipsum
+
+#Network
+## Basic network commands
+## Firewalls
+fail2ban
+# 
+
+# SSH - secure shell
+* how to use it (direct login + piping)
+* setup ssh agent
+* generate rsa key pair (public & private part)
+
 # Links and readings
 * https://wiki.archlinux.org/index.php/users_and_groups
 * 
