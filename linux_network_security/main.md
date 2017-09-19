@@ -150,9 +150,24 @@ fail2ban
 # 
 
 # SSH - secure shell
-* how to use it (direct login + piping)
-* setup ssh agent
-* generate rsa key pair (public & private part)
+## Remote login and command execution
+```bash
+ssh remoteuser@hostname
+# e.g. ssh tomek@meerkat.org
+```
+#### SSH and pipes
+```bash
+tar czf - /home/user/files | ssh user@remote_host tar -xvzf -C /remote/path/
+```
+## RSA keys
+#### Making your life easier
+```bash
+ls -l ~/.ssh
+-rw-rw-r-- 1 tomek tomek  119 Jul 27 15:17 config      # custom configuration
+-rw-r--r-- 1 tomek tomek 4642 Aug 30 15:46 known_hosts # list of trusted hosts
+-rw------- 1 tomek tomek 3326 Jun  4 22:03 id_rsa      # private part of rsa key
+-rw-r--r-- 1 tomek tomek  748 Jun  4 22:03 id_rsa.pub  # public part of rsa key
+```
 
 # Links and readings
 * https://wiki.archlinux.org/index.php/users_and_groups
