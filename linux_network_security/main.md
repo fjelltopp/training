@@ -145,10 +145,87 @@ Lorem ipsum
 
 #Network
 ## Basic network commands
-## Firewalls
-fail2ban
+### ifconfig
+```bash
+tomek@ubuntu:~$ ifconfig
+# eth0      Link encap:Ethernet  HWaddr 02:76:22:67:e9:bc  
+#           inet addr:10.0.1.27  Bcast:10.0.1.255  Mask:255.255.255.0
+#           inet6 addr: fe80::76:22ff:fe67:e9bc/64 Scope:Link
+#           UP BROADCAST RUNNING MULTICAST  MTU:9001  Metric:1
+#           RX packets:890 errors:0 dropped:0 overruns:0 frame:0
+#           TX packets:839 errors:0 dropped:0 overruns:0 carrier:0
+#           collisions:0 txqueuelen:1000 
+#           RX bytes:100925 (100.9 KB)  TX bytes:115527 (115.5 KB)
 # 
+# lo        Link encap:Local Loopback  
+#           inet addr:127.0.0.1  Mask:255.0.0.0
+#           inet6 addr: ::1/128 Scope:Host
+#           UP LOOPBACK RUNNING  MTU:65536  Metric:1
+#           RX packets:184 errors:0 dropped:0 overruns:0 frame:0
+#           TX packets:184 errors:0 dropped:0 overruns:0 carrier:0
+#           collisions:0 txqueuelen:1 
+#           RX bytes:16126 (16.1 KB)  TX bytes:16126 (16.1 KB)
 
+#################
+itomek@ubuntu:~$ fconfig eth0     # for more specific output
+
+```
+### ping
+PING (Packet INternet Groper) command is the best way to test connectivity between two nodes.
+```bash
+ ping google.com
+ #PING google.com (172.217.18.78) 56(84) bytes of data.
+ #64 bytes from bud02s26-in-f14.1e100.net (172.217.18.78): icmp_seq=1 ttl=52 time=77.9 ms
+ #64 bytes from bud02s26-in-f14.1e100.net (172.217.18.78): icmp_seq=2 ttl=52 time=76.0 ms
+ #64 bytes from bud02s26-in-f14.1e100.net (172.217.18.78): icmp_seq=3 ttl=52 time=84.4 ms
+ #64 bytes from bud02s26-in-f14.1e100.net (172.217.18.78): icmp_seq=4 ttl=52 time=92.2 ms
+ #^C
+ #--- google.com ping statistics ---
+ #4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+ #rtt min/avg/max/mdev = 76.017/82.665/92.240/6.348 ms
+```
+Kill it with <kbd>Ctrl</kbd> + <kbd>C</kbd>
+
+
+### traceroute
+Prints the route of packages on the way to host.
+```bash
+traceroute 4.2.2.2
+# traceroute to 4.2.2.2 (4.2.2.2), 30 hops max, 60 byte packets
+# 1  192.168.50.1 (192.168.50.1)  0.217 ms  0.624 ms  0.133 ms
+# 2  227.18.106.27.mysipl.com (27.106.18.227)  2.343 ms  1.910 ms  1.799 ms
+# 3  221-231-119-111.mysipl.com (111.119.231.221)  4.334 ms  4.001 ms  5.619 ms
+# 4  10.0.0.5 (10.0.0.5)  5.386 ms  6.490 ms  6.224 ms
+# 5  gi0-0-0.dgw1.bom2.pacific.net.in (203.123.129.25)  7.798 ms  7.614 ms  7.378 ms
+# 6  115.113.165.49.static-mumbai.vsnl.net.in (115.113.165.49)  10.852 ms  5.389 ms  4.322 ms
+# 7  ix-0-100.tcore1.MLV-Mumbai.as6453.net (180.87.38.5)  5.836 ms  5.590 ms  5.503 ms
+# 8  if-9-5.tcore1.WYN-Marseille.as6453.net (80.231.217.17)  216.909 ms  198.864 ms  201.737 ms
+# 9  if-2-2.tcore2.WYN-Marseille.as6453.net (80.231.217.2)  203.305 ms  203.141 ms  202.888 ms
+# 10  if-5-2.tcore1.WV6-Madrid.as6453.net (80.231.200.6)  200.552 ms  202.463 ms  202.222 ms
+# 11  if-8-2.tcore2.SV8-Highbridge.as6453.net (80.231.91.26)  205.446 ms  215.885 ms  202.867 ms
+# 12  if-2-2.tcore1.SV8-Highbridge.as6453.net (80.231.139.2)  202.675 ms  201.540 ms  203.972 ms
+# 13  if-6-2.tcore1.NJY-Newark.as6453.net (80.231.138.18)  203.732 ms  203.496 ms  202.951 ms
+# 14  if-2-2.tcore2.NJY-Newark.as6453.net (66.198.70.2)  203.858 ms  203.373 ms  203.208 ms
+# 15  66.198.111.26 (66.198.111.26)  201.093 ms 63.243.128.25 (63.243.128.25)  206.597 ms 66.198.111.26 (66.198.111.26)  204.178 ms
+# 16  ae9.edge1.NewYork.Level3.net (4.68.62.185)  205.960 ms  205.740 ms  205.487 ms
+# 17  vlan51.ebr1.NewYork2.Level3.net (4.69.138.222)  203.867 ms vlan52.ebr2.NewYork2.Level3.net (4.69.138.254)  202.850 ms vlan51.ebr1.NewYork2.Level3.net (4.69.138.222)  202.351 ms
+# 18  ae-6-6.ebr2.NewYork1.Level3.net (4.69.141.21)  201.771 ms  201.185 ms  201.120 ms
+# 19  ae-81-81.csw3.NewYork1.Level3.net (4.69.134.74)  202.407 ms  201.479 ms ae-92-92.csw4.NewYork1.Level3.net (4.69.148.46)  208.145 ms
+# 20  ae-2-70.edge2.NewYork1.Level3.net (4.69.155.80)  200.572 ms ae-4-90.edge2.NewYork1.Level3.net (4.69.155.208)  200.402 ms ae-1-60.edge2.NewYork1.Level3.net (4.69.155.16)  203.573 ms
+# 21  b.resolvers.Level3.net (4.2.2.2)  199.725 ms  199.190 ms  202.488 ms
+```
+
+### netstat
+Swiss army knife for networking.
+```bash
+netstat -a | grep ssh
+# tcp        0      0 *:ssh                   *:*                     LISTEN     
+# tcp        0     36 ip-10-0-1-27.eu-wes:ssh user-31-175-161-1:47310 ESTABLISHED
+# tcp        0      0 ip-10-0-1-27.eu-wes:ssh user-31-175-161-1:43680 ESTABLISHED
+# tcp        0      0 ip-10-0-1-27.eu-wes:ssh user-31-175-161-1:53704 ESTABLISHED
+# tcp6       0      0 [::]:ssh                [::]:*                  LISTEN 
+```
+For more please see `man netstat` or links at the end.
 # SSH - secure shell
 ## Remote login and command execution
 ```bash
@@ -272,4 +349,7 @@ List of trusted hosts with their secure fingerprint. Important for preventing *m
 
 # Links and readings
 * https://wiki.archlinux.org/index.php/users_and_groups
-* 
+* https://help.ubuntu.com/community/SSH/OpenSSH/Keys
+* https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04
+* https://www.tecmint.com/20-netstat-commands-for-linux-network-management/
+
