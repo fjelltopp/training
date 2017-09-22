@@ -1,7 +1,6 @@
-"who_code","deviceid","sim_id","clinic","country_location_id","clinic_type","case_report","case_type","device_tags","district","region","longitude","latitude","start_date","population"
-1,1,1,"Clinic 1","unique_code_1","Primary","Yes","mh","CD","District 1","Region 1",0.1,0.1,"01/02/16",10000
-2,2,2,"Clinic 2","unique_code_2","Primary","Yes","pip","CD","District 1","Region 1",0.2,0.2,"01/02/16",5000
-3,3,3,"Clinic 3","unique_code_3","Focal","No",,"CD,NCD","District 1","Region 1",0.3,0.2,"01/02/16",4000
-4,4,4,"Clinic 4","unique_code_4","Primary","Yes","mh, pip, foreigner","CD,NCD","District 2","Region 1",0.2,0.3,"01/02/16",10000
-5,5,5,"Clinic 5","unique_code_5","Hospital","Yes",,"CD,NCD","District 3","Region 2",0.4,-0.1,,10000
-6,6,6,"Clinic 1","unique_code_1","Primary","Yes","foreigner","NCD","District 1","Region 1",0.1,0.1,,1000
+"deviceid","sim_id","clinic","country_location_id","clinic_type","case_report","case_type","device_tags","district","longitude","latitude","start_date","population"
+1,1,"Clinic 1","unique_code_1","Primary","Yes","mh","CD","District 1",0.1,0.1,"01/02/16",10000
+2,2,"Clinic 2","unique_code_2","Primary","Yes","pip","CD","District 1",0.2,0.2,"01/02/16",5000
+3,3,"Clinic 3","unique_code_3","Focal","No",,"CD,NCD","District 1",0.3,0.2,"01/02/16",4000
+4,4,"Clinic 4","unique_code_4","Primary","Yes","mh, pip, foreigner","CD,NCD","District 2",0.2,0.3,"01/02/16",10000
+5,5,"Clinic 5","unique_code_5","Hospital","Yes",,"CD,NCD","District 3",0.4,-0.1,,10000
