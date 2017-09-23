@@ -1,0 +1,4 @@
+district,country_location_id,region,population
+District 1,district_code_1,Region 1,20000
+District 2,district_code_2,Region 1,20000
+District 3,district_code_3,Region 2,20000
