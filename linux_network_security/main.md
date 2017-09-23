@@ -60,6 +60,13 @@ root@ubuntu:/# passwd tomek
 # passwd: password updated successfully
 ```
 
+Good tool to view user details is `id`
+
+```bash
+id tomek
+# uid=1000(tomek) gid=1000(tomek) groups=1000(tomek),4(adm),24(cdrom),27(sudo)
+```
+
 More modifications can be made with `usermod` which is greatly described in its man page:
 
 ```bash
@@ -108,9 +115,6 @@ And to remove the group:
 ```bash
 groupdel WHO                # group_name
 ```
-
-### Excercise:
-Bla bla bla
 
 ## What are files?
 In Linux everything is a file.
@@ -182,7 +186,6 @@ Or using aliases
 
 ```bash
 chmod a+r dog.txt       # gives read permission for all users
-chmod a,u,g+/-x/w/r
 ```
 
 * `+` to add permissions
@@ -202,9 +205,6 @@ Change file ownership with `chown`:
 ```bash
 chown user:group
 ```
-
-### Exercise
-Lorem ipsum
 
 # SSH - secure shell
 ## Remote login and command execution
@@ -435,6 +435,29 @@ netstat -a | grep ssh
 
 For more please see `man netstat` or links at the end.
 
+# Excercises:
+## Ex. 1
+Join in pairs and try to setup an ssh connection between your AWS VMs.
+
+Follow this scenario:
+1. Create a new user with password and share it with your colleague.
+2. Login with ssh to remote host and immidiately change your password.
+3. Configure passwordless ssh login for the remote host.
+
+## Ex. 2
+Collaboration with others.
+
+Now when you have another user let's prepare a collaboration space:
+1. Create a new group called `training` and assign your user and the one created
+ in earlier exercise.
+1. In you `$HOME` directory prepare 3 new directories:
+    1. `private` with permissions only for the owner - `rwx------`
+    1. `secret` with added read permission to the group `training`
+    1. `collaboration` with read/write permissions to the group `training`
+1. Create one text file in each of the directories with some message in it.
+1. After you and you partner are done, login with ssh to the other host and
+  try to read files from the three directories.
+1. Try to create a new text file in directory `collaboration` and `secret`.
 # Links and readings
 
 * https://wiki.archlinux.org/index.php/users_and_groups
