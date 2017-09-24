@@ -425,12 +425,15 @@ traceroute 4.2.2.2
 Swiss army knife for networking.
 
 ```bash
-netstat -a | grep ssh
-# tcp        0      0 *:ssh                   *:*                     LISTEN     
-# tcp        0     36 ip-10-0-1-27.eu-wes:ssh user-31-175-161-1:47310 ESTABLISHED
-# tcp        0      0 ip-10-0-1-27.eu-wes:ssh user-31-175-161-1:43680 ESTABLISHED
-# tcp        0      0 ip-10-0-1-27.eu-wes:ssh user-31-175-161-1:53704 ESTABLISHED
-# tcp6       0      0 [::]:ssh                [::]:*                  LISTEN 
+sudo netstat -tulpn
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address         Foreign Address      State       PID/Program name    
+tcp        0      0 0.0.0.0:5355          0.0.0.0:*            LISTEN      1085/systemd-resolv 
+tcp        0      0 127.0.0.1:63342       0.0.0.0:*            LISTEN      2655/java           
+tcp        0      0 127.0.0.1:631         0.0.0.0:*            LISTEN      965/cupsd           
+tcp        0      0 127.0.0.1:6942        0.0.0.0:*            LISTEN      2655/java           
+tcp6       0      0 :::5355               :::*                 LISTEN      1085/systemd-resolv 
+tcp6       0      0 :::80                 :::*                 LISTEN      9751/docker-proxy
 ```
 
 For more please see `man netstat` or links at the end.
