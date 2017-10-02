@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Training attendance form</h:title>
+    <model>
+      <instance>
+        <mix_form_v01rev1 id="mix_form" version="2017092401">
+          <person_name/>
+          <person_age/>
+          <profession/>
+          <thank_you_note/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </mix_form_v01rev1>
+      </instance>
+      <bind nodeset="/mix_form_v01rev1/person_name" type="string"/>
+      <bind nodeset="/mix_form_v01rev1/person_age" type="int"/>
+      <bind nodeset="/mix_form_v01rev1/profession" type="select1"/>
+      <bind nodeset="/mix_form_v01rev1/thank_you_note" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/mix_form_v01rev1/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/mix_form_v01rev1/person_name">
+      <label>What is your name?</label>
+    </input>
+    <input ref="/mix_form_v01rev1/person_age">
+      <label>What is your age?</label>
+    </input>
+    <select1 ref="/mix_form_v01rev1/profession">
+      <label>What is your profession?</label>
+      <item>
+        <label>Programmer</label>
+        <value>programmer</value>
+      </item>
+      <item>
+        <label>System Administator</label>
+        <value>sysadmin</value>
+      </item>
+    </select1>
+    <input ref="/mix_form_v01rev1/thank_you_note">
+      <label>Thank you for filling this form!</label>
+    </input>
+  </h:body>
+</h:html>
