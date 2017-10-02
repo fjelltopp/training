@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Training opinion form (translated)</h:title>
+    <model>
+      <itext>
+        <translation default="true()" lang="polish">
+          <text id="/training_opinion_form_translated/personal/age/under30:label">
+            <value>Ponizej 30 lat</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences:label">
+            <value>Co lubisz jesc?</value>
+          </text>
+          <text id="/training_opinion_form_translated/coffee_preferences/style:label">
+            <value>Jaki rodzaj kawy najbardziej ci odpowiada?</value>
+          </text>
+          <text id="/training_opinion_form_translated/today_date:label">
+            <value>No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/sugar_note:label">
+            <value>Zgodnie z zaleceniami WHO z samej tylko kawy pobierasz <output value=" /training_opinion_form_translated/perc_sugar "/> dziennego zapotrzebowania na cukier!</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/dates:label">
+            <value>Daktyle</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/brew_preference/tea:label">
+            <value>Herbata</value>
+          </text>
+          <text id="/training_opinion_form_translated/ack_cookies:label">
+            <value>Potwierdz ze nie lubisz ciasteczek Rani!!!</value>
+          </text>
+          <text id="/training_opinion_form_translated/coffee_preferences:label">
+            <value>Kawa</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/profession/sysadmin:label">
+            <value>Administrator Systemu</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/cookies:label">
+            <value>Ciasteczka Ranii</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion:label">
+            <value>Opinie</value>
+          </text>
+          <text id="/training_opinion_form_translated/coffee_preferences/sugar:label">
+            <value>Ile gramow cukru sypiesz do kawy?</value>
+          </text>
+          <text id="/training_opinion_form_translated/tea_preferences:label">
+            <value>Herbata</value>
+          </text>
+          <text id="/training_opinion_form_translated/end_time:label">
+            <value>No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/imsi:label">
+            <value>No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/pizza:label">
+            <value>Pizza</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/brew_preference:label">
+            <value>Co lubisz pic?</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/shawarma:label">
+            <value>Shawarma</value>
+          </text>
+          <text id="/training_opinion_form_translated/coffee_preferences/amount:label">
+            <value>Ile razy dziennie pijesz kawe?</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/brew_preference/coffee:label">
+            <value>Kawa</value>
+          </text>
+          <text id="/training_opinion_form_translated/start_time:label">
+            <value>this is metadata! No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/profession:label">
+            <value>Zawod</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/profession/programmer:label">
+            <value>Programista</value>
+          </text>
+          <text id="/training_opinion_form_translated/ack:label">
+            <value>Wyrażam zgodę na przetwarzanie moich danych osobowych dla celów rekrutacji, zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (tj. Dz. U. Nr 101 z 2002 r., poz. 926 z późn. zm.).</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/age:label">
+            <value>Wiek</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/name:label">
+            <value>Imie</value>
+          </text>
+          <text id="/training_opinion_form_translated/imei:label">
+            <value>No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/cheese:label">
+            <value>Ser</value>
+          </text>
+          <text id="/training_opinion_form_translated/pic:label">
+            <value>Miejsce na zdjecie:</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal:label">
+            <value>Dane prywatne</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/age/over30:label">
+            <value>Powyzej 30 lat</value>
+          </text>
+          <text id="/training_opinion_form_translated/tea_preferences/last_coffee:label">
+            <value>Jak to? Kiedy ostatni raz piles kawe?</value>
+          </text>
+          <text id="/training_opinion_form_translated/sim:label">
+            <value>No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/falafel:label">
+            <value>Falafel</value>
+          </text>
+        </translation>
+        <translation lang="english">
+          <text id="/training_opinion_form_translated/personal/age/under30:label">
+            <value>Under 30 years old</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences:label">
+            <value>Please choose types of food which you like to **eat**.</value>
+          </text>
+          <text id="/training_opinion_form_translated/coffee_preferences/style:label">
+            <value>What type of coffee do you prefer?</value>
+          </text>
+          <text id="/training_opinion_form_translated/today_date:label">
+            <value>No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/sugar_note:label">
+            <value>According to WHO guidelines, you get <output value=" /training_opinion_form_translated/perc_sugar "/> percent of your daily sugar intake from coffee!</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/dates:label">
+            <value>Dates</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/brew_preference/tea:label">
+            <value>Tea</value>
+          </text>
+          <text id="/training_opinion_form_translated/ack_cookies:label">
+            <value>Do you acknowledge that you don't like Rania's Cookies? 
+If you changed your mind, please swipe back and correct your answer!</value>
+          </text>
+          <text id="/training_opinion_form_translated/coffee_preferences:label">
+            <value>Coffee Preferences</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/profession/sysadmin:label">
+            <value>System Administator</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/cookies:label">
+            <value>Rania's Cookies</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion:label">
+            <value>Your Opinions</value>
+          </text>
+          <text id="/training_opinion_form_translated/coffee_preferences/sugar:label">
+            <value>How many grams of sugar do you drink with each coffee (one teaspoon is 4.2 grams)?</value>
+          </text>
+          <text id="/training_opinion_form_translated/tea_preferences:label">
+            <value>Tea Preferences</value>
+          </text>
+          <text id="/training_opinion_form_translated/end_time:label">
+            <value>No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/imsi:label">
+            <value>No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/pizza:label">
+            <value>Pizza</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/brew_preference:label">
+            <value>Which brew do you prefer?</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/shawarma:label">
+            <value>Shawarma</value>
+          </text>
+          <text id="/training_opinion_form_translated/coffee_preferences/amount:label">
+            <value>How many times a day do you drink coffee?</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/brew_preference/coffee:label">
+            <value>Coffee</value>
+          </text>
+          <text id="/training_opinion_form_translated/start_time:label">
+            <value>this is metadata! No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/profession:label">
+            <value>What is your profession?</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/profession/programmer:label">
+            <value>Programmer</value>
+          </text>
+          <text id="/training_opinion_form_translated/ack:label">
+            <value>This data will be sent to the server!
+Do you agree?</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/age:label">
+            <value>What is your age?</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/name:label">
+            <value>What is your name?</value>
+          </text>
+          <text id="/training_opinion_form_translated/imei:label">
+            <value>No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/cheese:label">
+            <value>Cheese</value>
+          </text>
+          <text id="/training_opinion_form_translated/pic:label">
+            <value>If you want, send us a picture of your favourite brew.</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal:label">
+            <value>Personal Information</value>
+          </text>
+          <text id="/training_opinion_form_translated/personal/age/over30:label">
+            <value>Over 30 years old</value>
+          </text>
+          <text id="/training_opinion_form_translated/tea_preferences/last_coffee:label">
+            <value>We are not interested in tea! When was the last time you drank coffee?</value>
+          </text>
+          <text id="/training_opinion_form_translated/sim:label">
+            <value>No label needed</value>
+          </text>
+          <text id="/training_opinion_form_translated/opinion/food_preferences/falafel:label">
+            <value>Falafel</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <training_opinion_form_translated id="training_opinion_form_translated" version="9">
+          <start_time/>
+          <end_time/>
+          <today_date/>
+          <imei/>
+          <imsi/>
+          <sim/>
+          <personal>
+            <name/>
+            <age/>
+            <profession/>
+          </personal>
+          <opinion>
+            <food_preferences/>
+            <brew_preference/>
+          </opinion>
+          <coffee_preferences>
+            <sugar>4.2</sugar>
+            <style/>
+            <amount>2</amount>
+          </coffee_preferences>
+          <tea_preferences>
+            <last_coffee/>
+          </tea_preferences>
+          <risk/>
+          <perc_sugar/>
+          <sugar_note/>
+          <ack_cookies/>
+          <pic/>
+          <ack/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </training_opinion_form_translated>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/training_opinion_form_translated/start_time" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/training_opinion_form_translated/end_time" type="dateTime"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/training_opinion_form_translated/today_date" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/training_opinion_form_translated/imei" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="subscriberid" nodeset="/training_opinion_form_translated/imsi" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/training_opinion_form_translated/sim" type="string"/>
+      <bind nodeset="/training_opinion_form_translated/personal/name" type="string"/>
+      <bind nodeset="/training_opinion_form_translated/personal/age" required="true()" type="select1"/>
+      <bind nodeset="/training_opinion_form_translated/personal/profession" type="select1"/>
+      <bind nodeset="/training_opinion_form_translated/opinion/food_preferences" type="select"/>
+      <bind nodeset="/training_opinion_form_translated/opinion/brew_preference" required="true()" type="select1"/>
+      <bind nodeset="/training_opinion_form_translated/coffee_preferences" relevant=" /training_opinion_form_translated/opinion/brew_preference =&quot;coffee&quot;"/>
+      <bind nodeset="/training_opinion_form_translated/coffee_preferences/sugar" required="true()" type="decimal"/>
+      <bind nodeset="/training_opinion_form_translated/coffee_preferences/style" required="true()" type="string"/>
+      <bind nodeset="/training_opinion_form_translated/coffee_preferences/amount" required="true()" type="int"/>
+      <bind nodeset="/training_opinion_form_translated/tea_preferences" relevant=" /training_opinion_form_translated/opinion/brew_preference =&quot;tea&quot;"/>
+      <bind nodeset="/training_opinion_form_translated/tea_preferences/last_coffee" type="date"/>
+      <bind calculate=" /training_opinion_form_translated/coffee_preferences/sugar * /training_opinion_form_translated/coffee_preferences/amount " nodeset="/training_opinion_form_translated/risk" type="string"/>
+      <bind calculate=" /training_opinion_form_translated/risk  * 4" nodeset="/training_opinion_form_translated/perc_sugar" type="string"/>
+      <bind nodeset="/training_opinion_form_translated/sugar_note" readonly="true()" relevant=" /training_opinion_form_translated/opinion/brew_preference =&quot;coffee&quot;" type="string"/>
+      <bind nodeset="/training_opinion_form_translated/ack_cookies" relevant="not(selected( /training_opinion_form_translated/opinion/food_preferences ,&quot;cookies&quot;))" type="string"/>
+      <bind nodeset="/training_opinion_form_translated/pic" type="binary"/>
+      <bind nodeset="/training_opinion_form_translated/ack" required="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/training_opinion_form_translated/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/training_opinion_form_translated/personal">
+      <label ref="jr:itext('/training_opinion_form_translated/personal:label')"/>
+      <input ref="/training_opinion_form_translated/personal/name">
+        <label ref="jr:itext('/training_opinion_form_translated/personal/name:label')"/>
+      </input>
+      <select1 ref="/training_opinion_form_translated/personal/age">
+        <label ref="jr:itext('/training_opinion_form_translated/personal/age:label')"/>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/personal/age/under30:label')"/>
+          <value>under30</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/personal/age/over30:label')"/>
+          <value>over30</value>
+        </item>
+      </select1>
+      <select1 ref="/training_opinion_form_translated/personal/profession">
+        <label ref="jr:itext('/training_opinion_form_translated/personal/profession:label')"/>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/personal/profession/programmer:label')"/>
+          <value>programmer</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/personal/profession/sysadmin:label')"/>
+          <value>sysadmin</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/training_opinion_form_translated/opinion">
+      <label ref="jr:itext('/training_opinion_form_translated/opinion:label')"/>
+      <select ref="/training_opinion_form_translated/opinion/food_preferences">
+        <label ref="jr:itext('/training_opinion_form_translated/opinion/food_preferences:label')"/>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/opinion/food_preferences/cookies:label')"/>
+          <value>cookies</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/opinion/food_preferences/dates:label')"/>
+          <value>dates</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/opinion/food_preferences/falafel:label')"/>
+          <value>falafel</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/opinion/food_preferences/shawarma:label')"/>
+          <value>shawarma</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/opinion/food_preferences/pizza:label')"/>
+          <value>pizza</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/opinion/food_preferences/cheese:label')"/>
+          <value>cheese</value>
+        </item>
+      </select>
+      <select1 ref="/training_opinion_form_translated/opinion/brew_preference">
+        <label ref="jr:itext('/training_opinion_form_translated/opinion/brew_preference:label')"/>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/opinion/brew_preference/coffee:label')"/>
+          <value>coffee</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/training_opinion_form_translated/opinion/brew_preference/tea:label')"/>
+          <value>tea</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/training_opinion_form_translated/coffee_preferences">
+      <label ref="jr:itext('/training_opinion_form_translated/coffee_preferences:label')"/>
+      <input ref="/training_opinion_form_translated/coffee_preferences/sugar">
+        <label ref="jr:itext('/training_opinion_form_translated/coffee_preferences/sugar:label')"/>
+      </input>
+      <input ref="/training_opinion_form_translated/coffee_preferences/style">
+        <label ref="jr:itext('/training_opinion_form_translated/coffee_preferences/style:label')"/>
+      </input>
+      <input ref="/training_opinion_form_translated/coffee_preferences/amount">
+        <label ref="jr:itext('/training_opinion_form_translated/coffee_preferences/amount:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/training_opinion_form_translated/tea_preferences">
+      <label ref="jr:itext('/training_opinion_form_translated/tea_preferences:label')"/>
+      <input ref="/training_opinion_form_translated/tea_preferences/last_coffee">
+        <label ref="jr:itext('/training_opinion_form_translated/tea_preferences/last_coffee:label')"/>
+      </input>
+    </group>
+    <input ref="/training_opinion_form_translated/sugar_note">
+      <label ref="jr:itext('/training_opinion_form_translated/sugar_note:label')"/>
+    </input>
+    <trigger ref="/training_opinion_form_translated/ack_cookies">
+      <label ref="jr:itext('/training_opinion_form_translated/ack_cookies:label')"/>
+    </trigger>
+    <upload mediatype="image/*" ref="/training_opinion_form_translated/pic">
+      <label ref="jr:itext('/training_opinion_form_translated/pic:label')"/>
+    </upload>
+    <trigger ref="/training_opinion_form_translated/ack">
+      <label ref="jr:itext('/training_opinion_form_translated/ack:label')"/>
+    </trigger>
+  </h:body>
+</h:html>
