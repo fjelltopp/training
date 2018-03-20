@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Overview and Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Principles of implementation}{5}{0}{2}
+\beamer@sectionintoc {3}{Technical Structure}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Data Collection}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{Data processing}{13}{0}{3}
+\beamer@subsectionintoc {3}{3}{Web interface}{18}{0}{3}
+\beamer@subsectionintoc {3}{4}{Infrastructure}{24}{0}{3}
