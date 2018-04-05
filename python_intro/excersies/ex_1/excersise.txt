@@ -1,0 +1,5 @@
+Write a functions that reverses a string. So if the input is "function" the output should be "noitcunf".
+
+It is possible to loop through the characters in a string in a standard for loop and the len() function will return the length of the string.
+
+Complete the reverse_string function in the ex_1.py file 

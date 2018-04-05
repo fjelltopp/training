@@ -1,0 +1,32 @@
+Reading data from a csv file and calculating the average value of BMI
+
+In this folder there is a a data file, bmi.csv.
+
+The structure of the file is
+
+height, weight
+1.8, 43
+....
+...
+
+We want to read the data from this file and calculate the average BMI.
+
+
+Hints: 
+
+To read a file in python we can use the open() function and it is normal to do it like this:
+
+with open(filename) as f:
+   read_file
+The file object has multiple way of reading the content. Either f.read(), this will return the whole file content or it is possible to loop through all the lines in the file as this:
+
+with open(filename) as f:
+   for line in f:
+       print(line)
+
+
+If you have a string "a,b" you can use the split function to split on a delimiter. So
+
+"a,b".split(",") == ["a", "b"]
+
+To perform and computations on the numbers reember to cast the to a numerical type using ( float() or int())

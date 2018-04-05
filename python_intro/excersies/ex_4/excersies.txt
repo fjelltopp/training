@@ -1,0 +1,20 @@
+Retreiving data from the web using the requests library 
+
+The documentation for the requests library can be found here: http://docs.python-requests.org/en/master/.
+
+If importing requests does not work try to install it with:
+pip install requests
+
+We will start with the requests.get function. Read the documentation here and http://docs.python-requests.org/en/master/user/quickstart/ and try to write some simple code that prints as a string the content of google.com in a python interpreter session.
+
+We now want to get some data from the madagascar public health surveillance system. Most of the data is password protected, but we can access some of the very basic data at http://mad.aws.emro.info/api/key_indicators.
+b
+You can see what the data looks like by click opening the link in your browser.
+
+The data is structured as follows: under the key reg_2 we find the total number of consultations and under tot_1 we find the total number of cases submitted to the system.
+The weeks give the number per epi_week and total gives the total.
+
+The data is in the JSON format, this means that we need to load it to a dictionary before we can access it. Ther are multiple ways of doing that, but the requests library can do it for us see here(http://docs.python-requests.org/en/master/user/quickstart/#json-response-content).
+
+Write some code that can print out the total number of consultations and cases this year using the data from the surveillance website site. Then find the week with the most cases and for each week calculate the number of cases divided by the number of consultations. Which week had smallest fraction?
+

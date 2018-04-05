@@ -1,0 +1,21 @@
+Write a function that takes a list of python dictionaries in to an html table.
+
+(Html table specification: https://www.tutorialspoint.com/html/html_tables.htm).
+
+
+The table should include headers which corresponds to the keys in the dictionary.
+
+We also pass a list of the headers in the correct order to the function.
+
+We can assume that all the keys in the header is in each dictionary.
+(As an extension you can try to extend the code to deal with non-existent keys)
+
+We want to produce an output like this:
+
+"<table> <tr> <th> a </th> <th> b </th> </tr><tr> <td> 1 </td> <td> 2 </td> </tr> <tr> <td> 3 </td> <td> 4 </td></tr> </table>"
+
+from a list of python dictionariers: lists = [{"a": 1, "b": 2}, {"a":3, "b": 4}]
+
+The beginings of the function is in ex_3.py
+
+
